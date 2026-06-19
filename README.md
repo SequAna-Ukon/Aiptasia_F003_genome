@@ -17,11 +17,12 @@ The genome was assembled with [flye](https://github.com/mikolmogorov/Flye) using
 
 * **03.assembly_filtering.sh**
   
-The assembly was filtered using [BlobToolKit](https://blobtoolkit.genomehubs.org/).
+The assembly was decontaminated using [BlobToolKit](https://blobtoolkit.genomehubs.org/).
 
 * **04.mitogenome.sh**
+ 
+The mitochondrial genome was assembled into a single contig using [GetOrganelle](https://github.com/Kinggerm/GetOrganelle), while [MITOS](https://github.com/trust2virt/mitos2) was used to obtain de novo annotation of the mitogenomic sequence.
 
-Additionally, a single-contig mitochondrial genome was assembled using Canu (https://github.com/marbl/canu), circularized with Circlator (https://github.com/sanger-pathogens/circlator) and polished with Racon. 
 
 ## Annotation Scripts
 * **05.repeats.sh**
@@ -30,7 +31,9 @@ Repeats in the _Exaiptasia diaphana_ genome were identified using [EDTA](https:/
 
 * **06.structural_annotation.sh**
 
-Structural annotation was done using [BRAKER3](https://github.com/Gaius-Augustus/BRAKER). First, tRNAs were identified using [tRNAscan-SE](https://github.com/UCSC-LoweLab/tRNAscan-SE), which were subsequently filtered for high-confidence tRNAs using EukHighConfidenceFilter implemented in tRNAscan-SE. Second, transcript evidence for the structural annotation was prepared from RNASeq data, which were trimmed using [Trimmomatic](https://github.com/usadellab/Trimmomatic) and mapped to the _Porites harrisoni_ assembly using STAR (https://github.com/alexdobin/STAR). The resulting bam files were merged, and strand-specific RNA was extracted from the merged bam file. Using the script stringtie2utr.py (https://github.com/Gaius-Augustus/BRAKER/blob/utr_from_stringtie/scripts/stringtie2utr.py) from the BRAKER3 suite, untranslated regions (UTRs) were added to the gtf file output by BRAKER3. The high-confidence set of tRNAs was merged with the BRAKER3 structural predictions. Then, the gff3 file was checked for overlapping genes using AGAT (https://agat.readthedocs.io/en/latest/index.html) and validated using GenomeTools (https://github.com/genometools/genometools). Finally, GffRead (https://github.com/gpertea/gffread) was used to extract the predicted protein sequences from the merged file to use in the functional annotation.
+Structural annotation was done using [BRAKER3](https://github.com/Gaius-Augustus/BRAKER). First, tRNAs were identified using [tRNAscan-SE](https://github.com/UCSC-LoweLab/tRNAscan-SE), which were subsequently filtered for high-confidence tRNAs using EukHighConfidenceFilter implemented in tRNAscan-SE. Second, 
+RNA-Seq ONT data of aposymbiotic F003 anemones were used to predict UTR regions and refine gene predictions (Table 1). In addition, Illumina RNA-Seq datasets of aposymbiotic Aiptasia groups of larval cells were used [52].
+transcript evidence for the structural annotation was prepared from RNASeq data, which were trimmed using [Trimmomatic](https://github.com/usadellab/Trimmomatic) and mapped to the _Exaiptasia diaphana_ assembly using [STAR](https://github.com/alexdobin/STAR). The resulting bam files were merged, and strand-specific RNA was extracted from the merged bam file. Using the script stringtie2utr.py (https://github.com/Gaius-Augustus/BRAKER/blob/utr_from_stringtie/scripts/stringtie2utr.py) from the BRAKER3 suite, untranslated regions (UTRs) were added to the gtf file output by BRAKER3. The high-confidence set of tRNAs was merged with the BRAKER3 structural predictions. Then, the gff3 file was checked for overlapping genes using AGAT (https://agat.readthedocs.io/en/latest/index.html) and validated using GenomeTools (https://github.com/genometools/genometools). Finally, GffRead (https://github.com/gpertea/gffread) was used to extract the predicted protein sequences from the merged file to use in the functional annotation.
   
 * **08.functional_annotation.sh**
 
