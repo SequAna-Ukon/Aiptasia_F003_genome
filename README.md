@@ -1,4 +1,4 @@
-#Exaiptasia diaphana (Aiptasia) strain F003 reference genome assembly & annotation
+# Exaiptasia diaphana (Aiptasia) strain F003 reference genome assembly & annotation
 
 Scripts used for the _Porites harrisoni_ reference genome assembly and annotation as described in the corresponding publication:
 
