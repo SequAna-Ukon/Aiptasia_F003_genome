@@ -19,18 +19,14 @@ The genome was assembled with [flye](https://github.com/mikolmogorov/Flye) using
   
 The assembly was filtered using [BlobToolKit](https://blobtoolkit.genomehubs.org/).
 
-* **04.assembly_polish.sh**
-  
-The assembled and filtered genome was polished using the shorter polishing reads with Racon (https://github.com/lbcb-sci/racon) and Medaka (https://github.com/nanoporetech/medaka). The polished assembly was cleaned, contigs shorter than 200 bp were removed and headers were renamed and sorted using funannotate clean and funannotate sort (https://github.com/nextgenusfs/funannotate).
-
-* **05.mitogenome.sh**
+* **04.mitogenome.sh**
 
 Additionally, a single-contig mitochondrial genome was assembled using Canu (https://github.com/marbl/canu), circularized with Circlator (https://github.com/sanger-pathogens/circlator) and polished with Racon. 
 
 ## Annotation Scripts
-* **06.repeats.sh**
+* **05.repeats.sh**
   
-Repeats in the _Porites harrisoni_ genome were identified using EDTA (https://github.com/oushujun/EDTA) & RepeatModeler (https://github.com/Dfam-consortium/RepeatModeler) and soft-masked using RepeatMasker (https://github.com/rmhubley/RepeatMasker).
+Repeats in the _Exaiptasia diaphana_ genome were identified using [EDTA](https://github.com/oushujun/EDTA) and [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler) then soft-masked using [RepeatMasker](https://github.com/rmhubley/RepeatMasker).
 
 * **07.structural_annotation.sh**
 
