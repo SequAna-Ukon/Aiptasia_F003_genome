@@ -13,7 +13,7 @@ ONT reads were preprocessed using [PoreChop](https://github.com/rrwick/Porechop)
 
 * **02.assembly.sh**
   
-The genome was assembled with NECAT (https://github.com/xiaochuanle/NECAT) using the longer assembly reads (see above) and the assembly was assessed using gfastats (https://github.com/vgl-hub/gfastats) and BUSCO (https://github.com/metashot/busco). The genome coverage was assessed by mapping the assembly to a *Porites* reference database from NCBI with bwa (https://github.com/lh3/bwa).
+The genome was assembled with [flye](https://github.com/mikolmogorov/Flye) using the clean long reads, and the assembly was assessed using [gfastats](https://github.com/vgl-hub/gfastats) and [BUSCO](https://github.com/metashot/busco). 
 
 * **03.assembly_filtering.sh**
   
