@@ -1,6 +1,6 @@
 # _Exaiptasia diaphana_ (Aiptasia) strain F003 reference genome assembly & annotation
 
-Scripts used for the _Porites harrisoni_ reference genome assembly and annotation as described in the corresponding publication:
+Scripts used for the _Exaiptasia diaphana_ reference genome assembly and annotation as described in the corresponding publication:
 
 **Dörr et al. (2026):** "The genome of the coral model sea anemone Exaiptasia diaphana (Aiptasia) strain F003 ". *GigaByte*. DOI: tbd
 
