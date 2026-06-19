@@ -11,7 +11,7 @@ Raw gDNA sequencing data and raw RNA-Seq data (Oxford Nanopore long-reads) are d
 
 ONT reads were preprocessed using [PoreChop](https://github.com/rrwick/Porechop), and quality control was done using [FastQC](https://github.com/s-andrews/FastQC) and [NanoPlot](https://github.com/wdecoster/NanoPlot). 
 
-* **02.assembly_NECAT.sh**
+* **02.assembly.sh**
   
 The genome was assembled with NECAT (https://github.com/xiaochuanle/NECAT) using the longer assembly reads (see above) and the assembly was assessed using gfastats (https://github.com/vgl-hub/gfastats) and BUSCO (https://github.com/metashot/busco). The genome coverage was assessed by mapping the assembly to a *Porites* reference database from NCBI with bwa (https://github.com/lh3/bwa).
 
