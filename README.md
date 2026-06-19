@@ -17,7 +17,7 @@ The genome was assembled with [flye](https://github.com/mikolmogorov/Flye) using
 
 * **03.assembly_filtering.sh**
   
-The assembly was filtered using BlobToolKit (https://blobtoolkit.genomehubs.org/).
+The assembly was filtered using [BlobToolKit](https://blobtoolkit.genomehubs.org/).
 
 * **04.assembly_polish.sh**
   
