@@ -4,7 +4,7 @@ Scripts used for the _Porites harrisoni_ reference genome assembly and annotatio
 
 **Dörr et al. (2026):** "The genome of the coral model sea anemone Exaiptasia diaphana (Aiptasia) strain F003 ". *GigaByte*. DOI: tbd
 
-Raw gDNA sequencing data (Oxford Nanopore long-reads) are deposited at NCBI and raw RNA-Seq data are deposited under the BioProject PRJNA1089063 (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1089063), both accessible under the Umbrella BioProject PRJNA749006 (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA749006). This Whole Genome Shotgun project has been deposited at DDBJ/ENA/GenBank under the accession JBDLLT000000000 (https://www.ncbi.nlm.nih.gov/nuccore/JBDLLT000000000). The *Porites harrisoni* genome is version JBDLLT020000000. 
+Raw gDNA sequencing data and raw RNA-Seq data (Oxford Nanopore long-reads) are deposited under the  NCBI BioProject PRJNA1089063 (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1089063). This Whole Genome Shotgun project has been deposited at DDBJ/ENA/GenBank under the accession JBWBEE000000000 (https://www.ncbi.nlm.nih.gov/nuccore/JBWBEE000000000). 
 
 ## Assembly Scripts
 * **00.reads_preprocessing.sh**
@@ -13,7 +13,7 @@ ONT reads were preprocessed using PoreChop (https://github.com/rrwick/Porechop) 
 
 * **01.kmer_genome_size.sh**
   
-Kmer profiling was done using Meryl (https://github.com/marbl/meryl) and GenomeScope 2.0 (https://github.com/tbenavi1/genomescope2.0).
+Kmer profiling was done using  FastK (https://github.com/thegenemyers/FASTK), but you can use [KMC](http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=kmc&subpage=download) and GenomeScope 2.0 (https://github.com/tbenavi1/genomescope2.0).
 
 * **02.assembly_NECAT.sh**
   
