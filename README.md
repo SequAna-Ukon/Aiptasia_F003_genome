@@ -7,13 +7,9 @@ Scripts used for the _Porites harrisoni_ reference genome assembly and annotatio
 Raw gDNA sequencing data and raw RNA-Seq data (Oxford Nanopore long-reads) are deposited under the  NCBI BioProject PRJNA1089063 (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1089063). This Whole Genome Shotgun project has been deposited at DDBJ/ENA/GenBank under the accession JBWBEE000000000 (https://www.ncbi.nlm.nih.gov/nuccore/JBWBEE000000000). 
 
 ## Assembly Scripts
-* **00.reads_preprocessing.sh**
+* **01.reads_preprocessing.sh**
 
 ONT reads were preprocessed using PoreChop (https://github.com/rrwick/Porechop) and quality control was done using FastQC (https://github.com/s-andrews/FastQC) and NanoPlot (https://github.com/wdecoster/NanoPlot). The reads were filtered and split into assembly reads (longer; min. length 1000 bp) & polishing reads (shorter; min. length 500 bp) using chopper (https://github.com/wdecoster/chopper).
-
-* **01.kmer_genome_size.sh**
-  
-Kmer profiling was done using  FastK (https://github.com/thegenemyers/FASTK), but you can use [KMC](http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=kmc&subpage=download) and GenomeScope 2.0 (https://github.com/tbenavi1/genomescope2.0).
 
 * **02.assembly_NECAT.sh**
   
