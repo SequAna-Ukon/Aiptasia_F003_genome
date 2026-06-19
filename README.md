@@ -9,7 +9,7 @@ Raw gDNA sequencing data and raw RNA-Seq data (Oxford Nanopore long-reads) are d
 ## Assembly Scripts
 * **01.reads_preprocessing.sh**
 
-ONT reads were preprocessed using PoreChop (https://github.com/rrwick/Porechop) and quality control was done using FastQC (https://github.com/s-andrews/FastQC) and NanoPlot (https://github.com/wdecoster/NanoPlot). The reads were filtered and split into assembly reads (longer; min. length 1000 bp) & polishing reads (shorter; min. length 500 bp) using chopper (https://github.com/wdecoster/chopper).
+ONT reads were preprocessed using [PoreChop] (https://github.com/rrwick/Porechop) and quality control was done using [FastQC] (https://github.com/s-andrews/FastQC) and [NanoPlot] (https://github.com/wdecoster/NanoPlot). 
 
 * **02.assembly_NECAT.sh**
   
