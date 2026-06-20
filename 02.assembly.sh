@@ -21,7 +21,7 @@ mamba install -c bioconda busco
 
 gfastats /PATH/TO/aip_flye_raw/assembly.fasta
 
-busco -i /PATH/TO/aip_flye_raw/assembly.fastaa -m geno -l eukaryota_odb10 -c 30 -o busco_euk
+busco -i /PATH/TO/aip_flye_raw/assembly.fasta -m geno -l eukaryota_odb10 -c 30 -o busco_euk
 
 busco -i /PATH/TO/aip_flye_raw/assembly.fasta -m geno -l metazoa_odb10 -c 30 -o busco_meta
 
