@@ -1,0 +1,30 @@
+# BUSCO version is: 5.8.2 
+# The lineage dataset is: metazoa_odb10 (Creation date: 2024-01-08, number of genomes: 65, number of BUSCOs: 954)
+# Summarized benchmarking in BUSCO notation for file /home/sharafa/ONT/Aip_final/ncbi_dataset/data/GCA_056151815.1/GCA_056151815.1_Aiptasia_F003_V1_genomic.fna
+# BUSCO was run in mode: euk_genome_min
+# Gene predictor used: miniprot
+
+        ***** Results: *****
+
+        C:91.9%[S:87.2%,D:4.7%],F:5.0%,M:3.0%,n:954        
+        877     Complete BUSCOs (C)                        
+        832     Complete and single-copy BUSCOs (S)        
+        45      Complete and duplicated BUSCOs (D)         
+        48      Fragmented BUSCOs (F)                      
+        29      Missing BUSCOs (M)                         
+        954     Total BUSCO groups searched                
+
+Assembly Statistics:
+        12423   Number of scaffolds
+        12480   Number of contigs
+        237341625       Total length
+        0.002%  Percent gaps
+        77 kbp  Scaffold N50
+        76 kbp  Contigs N50
+
+
+Dependencies and versions:
+        hmmsearch: 3.4
+        bbtools: None
+        miniprot_index: 0.18-r281
+        miniprot_align: 0.18-r281
