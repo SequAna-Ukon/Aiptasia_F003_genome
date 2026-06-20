@@ -29,21 +29,21 @@ export PATH=$PATH:$PWD/gmes/
 ######################################################
 
 # Phobius (download from https://software.sbc.su.se/phobius.html)
-phobius.pl -short Phar.braker.prot.fasta > Phar.phobius.results.txt
+phobius.pl -short aip.prot.fasta > Phar.phobius.results.txt
 
 # InterProScan
-funannotate iprscan -i Phar.braker.prot.fasta -m docker -c 50-o Phar_iprscan.xml
+funannotate iprscan -i aip.prot.fasta -m docker -c 50-o Aip_iprscan.xml
 
 # eggnog-mapper
-emapper.py --cpu 50 -m mmseqs --data_dir funannotate_DB  -i Phar.braker.prot.fasta -o Phar_eggnog
+emapper.py --cpu 50 -m mmseqs --data_dir funannotate_DB  -i aip.prot.fasta -o Aip_eggnog
 
 # # FUNANNOTATE ANNOTATE # #
-funannotate annotate --gff PAG_Phar_UKon_1.1.gff3 --fasta PAG_UKon_Phar_1.1.fasta -s "Porites harrisoni" --busco_db  metazoa --eggnog Phar_eggnog.emapper.annotations --iprscan Phar_iprscan.xml --phobius phobius.results.txt --cpus 100 -o braker_anno
+funannotate annotate --gff aip.gff3 --fasta  /PATH/TO/aip_flye_raw/assembly.fasta -s "Exaiptasia diaphna" --busco_db  metazoa --eggnog Aip_eggnog.emapper.annotations --iprscan Aip_iprscan.xml --phobius phobius.results.txt --cpus 100 -o aip_anno
 
 ########## NCBI SUBMISSION ############ 
 
 # this is only if you plan to submit to NCBI #
-table2asn -M n -J -c w -euk -t Phar_ncbi.sbt -i PAG_UKon_Phar_1.1.fasta -gaps-min 10 -l paired-ends -j "[organism=Porites harrisoni] [isolate=UAE_SA_Phar_3_34-1_1080]" -locus-tag-prefix ABFA07 -f PAG_Phar_UKon_1.1.gff3 -o PAG_UKon_Phar.sqn -Z
+table2asn -M n -J -c w -euk -t Aip_ncbi.sbt -i /PATH/TO/aip_flye_raw/assembly.fasta -gaps-min 10 -l paired-ends -j "[organism=Exaiptasia diaphna] [isolate=F003]" -locus-tag-prefix ABFA07 -f aip.gff3 -o Aip.sqn -Z
 
 #######################################
 
