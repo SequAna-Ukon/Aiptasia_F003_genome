@@ -1,0 +1,26 @@
+# BUSCO version is: 5.8.2 
+# The lineage dataset is: metazoa_odb10 (Creation date: 2024-01-08, number of genomes: 65, number of BUSCOs: 954)
+# Summarized benchmarking in BUSCO notation for file /home/sharafa/ONT/Aip_final/ncbi_dataset/data/GCA_056151815.1/protein.faa
+# BUSCO was run in mode: proteins
+
+        ***** Results: *****
+
+        C:96.5%[S:94.5%,D:2.0%],F:1.7%,M:1.8%,n:954,E:13.0%        
+        921     Complete BUSCOs (C)     (of which 120 contain internal stop codons)                
+        902     Complete and single-copy BUSCOs (S)        
+        19      Complete and duplicated BUSCOs (D)         
+        16      Fragmented BUSCOs (F)                      
+        17      Missing BUSCOs (M)                         
+        954     Total BUSCO groups searched                
+
+Assembly Statistics:
+        12423   Number of scaffolds
+        12480   Number of contigs
+        237341625       Total length
+        0.002%  Percent gaps
+        77 kbp  Scaffold N50
+        76 kbp  Contigs N50
+
+
+Dependencies and versions:
+        hmmsearch: 3.4
