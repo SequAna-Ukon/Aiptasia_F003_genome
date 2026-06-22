@@ -41,8 +41,8 @@ The predicted genes were annotated using [InterProScan](https://github.com/ebi-p
 
 The folder **/figures/** contains data and references to reproduce plots in Figure 1 in the respective manuscript. Please refer to **/figures/README.md**.
 
-## Supplementary Tables
-The folder **/Supplementary Tables/** contains data and references in Supplementary Tables in the respective manuscript. Please refer to **/Supplementary Tables/README.md**.
+## Supplementary Files
+The folder **/Supplementary Files/** contains data and references in Supplementary Files in the respective manuscript. Please refer to **/Supplementary Files/README.md**.
 
 
 ## BUSCO
