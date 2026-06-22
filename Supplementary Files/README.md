@@ -6,4 +6,4 @@
 
 **Table S3.** Software used for the assembly and annotation of the Exaiptasia diaphana (Aiptasia) strain F003 genome.
 
-**Supplementary Figure S1.** 
+**Supplementary Figure S1.** Upset plot of orthologous groups identified by OrthoVenn3 showing shared and strain-specific gene families between F003 and CC7. 
