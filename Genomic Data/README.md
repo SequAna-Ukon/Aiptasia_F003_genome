@@ -15,8 +15,8 @@ This directory contains the final *Exaiptasia diaphana* strain F003 genome assem
 | File | Description |
 |------|-------------|
 | `Aiptasia_F003_V1.gff.gz` | Structural genome annotation in GFF3 format, including gene models and genomic features. |
-| `Aiptasia_F003_V1.faa.gz` | Predicted protein sequences translated from annotated coding genes. |
 | `Aiptasia_F003_V1_CDS.fa.gz` | Coding DNA sequences (CDS) extracted from the annotated genes. |
+| `Aiptasia_F003_V1.faa.gz` | Predicted protein sequences translated from annotated coding genes. |
 | `AiptasiaF003_V1_RE.gff.gz` | Genomic coordinates of annotated repetitive elements. |
 
 ### BUSCO/
