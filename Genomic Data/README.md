@@ -21,11 +21,23 @@ This directory contains the final *Exaiptasia diaphana* strain F003 genome assem
 
 ### BUSCO/
 
+BUSCO quality assessments are provided separately for the genome assembly and the genome annotation.
+
+#### assembly/
+
 | File | Description |
 |------|-------------|
 | `short_summary.txt` | Summary of BUSCO completeness scores for the genome assembly. |
 | `full_table.tsv` | Complete list of BUSCO genes and their classification (Complete, Fragmented, or Missing). |
-| `missing_busco_list.tsv` | List of BUSCO genes not detected in the assembly. |
+| `missing_busco_list.tsv` | List of BUSCO genes not detected in the genome assembly. |
+
+#### annotation/
+
+| File | Description |
+|------|-------------|
+| `short_summary.txt` | Summary of BUSCO completeness scores for the predicted gene set. |
+| `full_table.tsv` | Complete list of BUSCO genes identified in the annotated proteins and their classification. |
+| `missing_busco_list.tsv` | List of BUSCO genes not detected in the annotated protein set. |
 
 ## License
 
