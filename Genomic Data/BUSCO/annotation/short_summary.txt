@@ -1,6 +1,5 @@
 # BUSCO version is: 5.8.2 
 # The lineage dataset is: metazoa_odb10 (Creation date: 2024-01-08, number of genomes: 65, number of BUSCOs: 954)
-# Summarized benchmarking in BUSCO notation for file /media/sharaf/DataBank/ONT/ncbi_dataset/data/GCA_056151815.1/Aip.funannotate.prot.fasta
 # BUSCO was run in mode: proteins
 
 	***** Results: *****
