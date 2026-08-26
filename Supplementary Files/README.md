@@ -21,3 +21,6 @@
 
 
 **Supplementary Figure S1.** Upset plot of orthologous groups identified by OrthoVenn3 showing shared and strain-specific gene families between F003 and CC7. 
+
+
+- The processed data used to generate the UpSet plot are provided in ````/Supplementary Files/Supplementary_FigureS1_data.csv```` , The CSV contains the three intersection categories required to reproduce the plot.
