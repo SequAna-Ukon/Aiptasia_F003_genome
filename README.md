@@ -2,7 +2,7 @@
 
 This repository contains the scripts, genome assembly, annotation files, figures, and supplementary material used to generate the *Exaiptasia diaphana* strain F003 reference genome described in:
 
-**Dörr et al. (2026).** *The genome of the coral model sea anemone Exaiptasia diaphana (Aiptasia) strain F003.* **GigaByte**. DOI: **https://doi.org/10.46471/gigabyte.188**
+**Dörr et al. (2026).** *The genome of the coral model sea anemone Exaiptasia diaphana (Aiptasia) strain F003.* **GigaByte**. DOI: **10.46471/gigabyte.188**
 
 https://gigabytejournal.com/articles/188 
 
