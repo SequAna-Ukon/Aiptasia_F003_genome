@@ -4,6 +4,10 @@ This repository contains the scripts, genome assembly, annotation files, figures
 
 Melanie Dörr, Abdoallah Sharaf, Luigi Colin, Kevin Schuster, Alyssa C. Bell, Christian R. Voolstra, The genome of the coral model sea anemone Exaiptasia diaphana (Aiptasia) strain F003, Gigabyte, 2026  https://doi.org/10.46471/gigabyte.188
 
+Associate Zenodo repository with supplemental files: 
+
+Sharaf, A., Dörr, M. S., Colin, L., Schuster, K., Bell, A. C., & Voolstra, C. R. (2026). Exaiptasia diaphana Aiptasia F003 V1.0 final (Version V1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21918813
+
 ## Data availability
 
 Raw genomic DNA and Oxford Nanopore RNA-Seq data are available under NCBI BioProject **PRJNA1089063**:
